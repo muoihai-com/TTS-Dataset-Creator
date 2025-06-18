@@ -1,0 +1,9 @@
+customtkinter
+torch
+torchaudio
+pydub
+noisereduce
+numpy
+sounddevice
+onnxruntime
+scipy

@@ -22,7 +22,7 @@ def main():
         return example
 
     dataset = dataset.map(prepare_example, num_proc=4)
-    dataset = dataset.cast_column("audio", Audio())
+    dataset = dataset.cast_column("audio", Audio(sampling_rate=24000))
 
     print("-> Xử lý hoàn tất. Dữ liệu đã sẵn sàng để tải lên.")
     print("\nVí dụ một bản ghi:")
